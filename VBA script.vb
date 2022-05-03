@@ -5,7 +5,7 @@ Sub StockHW():
         ws.Cells(1, 10).Value = "Yearly Change"
         ws.Cells(1, 11).Value = "Percent Change"
         ws.Cells(1, 12).Value = "Total Stock Volume"
-        OpeningPrice = Cells(2, 3).Value
+        OpeningPrice = ws.Cells(2, 3).Value
         TotalVolume = 0
         Row = 2
         LastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
